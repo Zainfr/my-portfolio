@@ -80,7 +80,7 @@ export const DATA = {
     {
       company: "Ana Digital Media",
       href: "#",
-      badges: ["Full-time"],
+      badges: ["Full-time", "On-Site"],
       location: "Mumbai, India",
       title: "Full Stack Developer",
       logoUrl: "/ana.jpeg",
@@ -107,6 +107,7 @@ export const DATA = {
         "RabbitMQ",
         "Facebook Graph API",
         "WhatsApp Business API",
+        "SMTP2GO"
       ],
       links: [
         {
@@ -145,28 +146,30 @@ export const DATA = {
     },
 
     {
-      title: "Kesta",
-      href: "https://kesta.in",
-      dates: "May 2025 - Present",
+      title: "NekiHub – Community Welfare Platform",
+      href: "https://nekihub.com",
+      dates: "August 2025 - November 2025",
       active: true,
       description:
-        "E-commerce marketplace with wishlist, admin-controlled homepage, advanced filtering, SEO improvements, and Razorpay + Shiprocket integrations.",
+      "Volunteered as the technical lead for NekiHub, reviewing and merging pull requests, managing deployments, and assisting developers with backend development. Coordinated the overall development process to ensure timely and successful project completion.",
       technologies: [
         "Next.js",
         "Node.js",
+        "Tailwind CSS",
         "MongoDB",
-        "Razorpay",
-        "Shiprocket",
+        "JWT Authentication",
         "Google OAuth 2.0",
+        "Cloudinary",
+        "SMTP2GO",
       ],
       links: [
         {
           type: "Website",
-          href: "https://kesta.in",
+          href: "https://nekihub.com",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/kesta.png",
+      image: "/nekihub.png",
       video: "",
     },
     {
@@ -175,7 +178,7 @@ export const DATA = {
       dates: "September 2025 - December 2025",
       active: true,
       description: 
-      "Built an internal Film Rights Management System for Panorama Studios, handling complex licensing data across territories, platforms, and validity periods. Implemented role-based access control, advanced search, and automated expiry tracking to support enterprise-level operations.",
+      "Built an internal Film Rights Management System for Panorama Studios as a solo developer handling both frontend and backend, handling complex licensing data across territories, platforms, and validity periods. Implemented role-based access control, advanced search, and automated expiry tracking to support enterprise-level operations.",
       technologies: [
         "React.js",
         "Node.js",
@@ -195,28 +198,29 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Audits Management System",
-      href: "http://tbz-ui.duckdns.org",
-      dates: "November 2025 - Present",
+      title: "Kesta",
+      href: "https://kesta.in",
+      dates: "May 2025 - Present",
       active: true,
       description:
-      "Built an internal Audit Management System for TBZ Jewelers, managing audit workflows, checklists, issue tracking, and reporting with secure role-based access and enterprise-grade data handling.", 
+        "Worked on an E-commerce marketplace with wishlist, admin-controlled homepage, advanced filtering, SEO improvements, and Razorpay + Shiprocket integrations.",
       technologies: [
-        "React.js",
+        "Next.js",
         "Node.js",
-        "Material-UI",
-        "PostgreSQL",
-        "JWT Authentication",
-        "BunnyCDN",
+        "MongoDB",
+        "Razorpay",
+        "Shiprocket",
+        "Google OAuth 2.0",
+        "SMTP2GO"
       ],
       links: [
         {
           type: "Website",
-          href: "http://tbz-ui.duckdns.org",
+          href: "https://kesta.in",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/ams2.png",
+      image: "/kesta.png",
       video: "",
     },
     {
@@ -225,7 +229,7 @@ export const DATA = {
       dates: "November 2025 - Present",
       active: true,
       description:
-      "Built an internal Admin Panel for Kesta, managing product listings, user accounts, and order tracking with secure role-based access and enterprise-grade data handling.", 
+      "Worked on an internal Admin Panel for Kesta, managing product listings, user accounts, and order tracking with secure role-based access and enterprise-grade data handling.", 
       technologies: [
         "React.js",
         "Node.js",
