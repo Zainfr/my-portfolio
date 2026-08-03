@@ -19,8 +19,8 @@ export const DATA = {
   description:
     "Full-Stack Developer building scalable SaaS and production-grade web platforms.",
   summary:
-    "Full-Stack Developer with **1 year of professional experience** working on production-grade SaaS and web platforms. Experienced in end-to-end development, API integrations, performance optimization, and self-hosted infrastructure.",
-  avatarUrl: "/me.png",
+    "Full-Stack Developer with **1+ year of professional experience** working on production-grade SaaS and web platforms. Experienced in end-to-end development, API integrations, performance optimization, and self-hosted infrastructure.",
+  avatarUrl: "/me.jpg",
 
   skills: [
     { name: "React", icon: ReactLight },
@@ -33,6 +33,7 @@ export const DATA = {
     { name: "Java", icon: Java },
     { name: "MongoDB", icon: MongoDB },
     { name: "Git", icon: Icons.git  },
+    { name: "Go", icon: Icons.golang},
   ],
 
   navbar: [
@@ -87,7 +88,7 @@ export const DATA = {
       start: "Feb 2025",
       end: "Present",
       description:
-        "Engineered and maintained scalable full-stack web applications using React, Node.js, and relational databases. Designed secure RESTful APIs with authentication and authorization. Integrated payment gateways like Razorpay and PhonePe. Automated Docker image builds and CI pipelines using Gitea Actions and deployed on VPS infrastructure.",
+        "Engineered and maintained scalable full-stack web applications. Designed secure RESTful APIs with authentication and authorization. Integrated payment gateways like Razorpay and PhonePe. Automated Docker image builds and CI pipelines using Gitea Actions and deployed on VPS infrastructure.",
     },
   ],
 
@@ -98,7 +99,7 @@ export const DATA = {
       dates: "June 2025 - Present",
       active: true,
       description:
-        "CRM & Lead Management Platform. Improved database performance by ~150% via indexing optimizations. Implemented invoice generation, coupon systems, and structured billing flows. Self-hosted monitoring using Dozzle and Uptime Kuma.",
+        "A Real-Estate CRM platform designed to streamline lead management for real estate agencies and agents.",
       technologies: [
         "Node.js",
         "React",
@@ -118,15 +119,68 @@ export const DATA = {
       ],
       image: "/leadbrix.png",
       video: "",
+      techDescription: "Developed end-to-end business automation solutions. \n\n* **Payments & Billing:** Integrated Razorpay Subscription Management for flexible billing plans and Zoho Invoice for automated GST workflows.\n* **Customer Engagement:** Implemented WhatsApp Cloud API-based lead automation for instant communication.\n* **Infrastructure:** Set up a self-hosted monitoring infrastructure using Dozzle and Uptime Kuma for real-time log management, application observability, and uptime tracking.",
     },
-
+    {
+      title: "Rights Management System",
+      href: "https://rms.panoramastudios.in",
+      dates: "September 2025 - December 2025",
+      active: true,
+      description: 
+      "An enterprise-grade internal Film Rights Management System for tracking complex licensing data across territories, platforms, and validity periods.",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Material-UI",
+        "PostgreSQL",
+        "JWT Authentication",
+        "BunnyCDN",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://rms.panoramastudios.in",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/rms2.png",
+      video: "",
+      techDescription: "Built the entire platform as a solo developer for Panorama Studios, handling both frontend and backend architectures.\n\n* **Core Systems:** Implemented secure role-based access control (RBAC), advanced search filtering, and automated expiry tracking.\n* **Data Management:** Designed robust database schemas in PostgreSQL to handle complex, multi-dimensional licensing data.",
+    },
+    {
+      title: "FSG Donation",
+      href: "https://app.ssdfoundation.com",
+      dates: "Jun 2026 - Aug 2026",
+      active: true,
+      description:
+      "An internal donation management platform designed to streamline donor tracking and receipt generation for SSDFoundation.",
+      technologies: [
+        "Next.js 14",
+        "TypeScript",
+        "VPS",
+        "Capacitor.js",
+        "Tailwind CSS",
+        "Android Studio",
+        "Vercel",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://api.ssdfoundation.com/health",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/FSG.png",
+      video: "",
+      techDescription: "Developed an enterprise-grade role-based access control (RBAC) system to securely manage and track donor data.\n\n* **Core Systems:** Engineered automated receipt generation workflows.\n* **Cross-Platform:** Built and deployed a mobile application using Capacitor.js and Android Studio for on-the-go access.",
+    },
     {
       title: "Al-Hafidh",
       href: "https://alhafidh.vercel.app",
       dates: "Aug 2025 - Sep 2025",
       active: true,
       description:
-        "Qur’an Memorization App that gained 100+ users on the first day. Features include customizable Mushaf reader, smart revision tracking, and weekly leaderboard resets.",
+        "A Qur'an memorization application featuring a customizable Mushaf reader, smart revision tracking, and competitive weekly leaderboards.",
       technologies: [
         "Next.js 14",
         "TypeScript",
@@ -143,6 +197,7 @@ export const DATA = {
       ],
       image: "/alhafidh.png",
       video: "",
+      techDescription: "Developed a full-stack application that successfully acquired 100+ users on its launch day.\n\n* **Core Features:** Engineered the interactive Mushaf reader and intelligent revision tracking algorithms.\n* **Architecture:** Built with Next.js 14 and Firebase, utilizing Tailwind CSS for a responsive, modern UI.",
     },
 
     {
@@ -151,7 +206,7 @@ export const DATA = {
       dates: "August 2025 - November 2025",
       active: true,
       description:
-      "Volunteered as the technical lead for NekiHub, reviewing and merging pull requests, managing deployments, and assisting developers with backend development. Coordinated the overall development process to ensure timely and successful project completion.",
+      "A community welfare platform dedicated to social good and volunteer coordination.",
       technologies: [
         "Next.js",
         "Node.js",
@@ -171,31 +226,7 @@ export const DATA = {
       ],
       image: "/nekihub.png",
       video: "",
-    },
-    {
-      title: "Rights Management System",
-      href: "https://rms.panoramastudios.in",
-      dates: "September 2025 - December 2025",
-      active: true,
-      description: 
-      "Built an internal Film Rights Management System for Panorama Studios as a solo developer handling both frontend and backend, handling complex licensing data across territories, platforms, and validity periods. Implemented role-based access control, advanced search, and automated expiry tracking to support enterprise-level operations.",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Material-UI",
-        "PostgreSQL",
-        "JWT Authentication",
-        "BunnyCDN",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://rms.panoramastudios.in",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/rms2.png",
-      video: "",
+      techDescription: "Served as the Technical Lead, coordinating the overall development lifecycle to ensure timely project delivery.\n\n* **Leadership:** Managed code reviews, merged pull requests, and mentored developers.\n* **Backend Development:** Assisted with core backend architecture using Node.js, MongoDB, and JWT authentication.\n* **Deployment:** Oversaw deployment pipelines and infrastructure management.",
     },
     {
       title: "Kesta",
@@ -203,7 +234,7 @@ export const DATA = {
       dates: "May 2025 - Present",
       active: true,
       description:
-        "Worked on an E-commerce marketplace with wishlist, admin-controlled homepage, advanced filtering, SEO improvements, and Razorpay + Shiprocket integrations.",
+        "A fully-featured e-commerce marketplace platform that sells phonecases.",
       technologies: [
         "Next.js",
         "Node.js",
@@ -222,6 +253,7 @@ export const DATA = {
       ],
       image: "/kesta.png",
       video: "",
+      techDescription: "Developed core e-commerce functionalities to deliver a seamless shopping experience.\n\n* **Platform Features:** Built a wishlist system, dynamic admin-controlled homepage, and advanced product filtering.\n* **Integrations:** Successfully integrated Razorpay for secure payment processing and Shiprocket for logistics management.\n* **Optimization:** Implemented technical SEO improvements across the platform.",
     },
     {
       title: "Kesta Admin Panel",
@@ -229,7 +261,7 @@ export const DATA = {
       dates: "November 2025 - Present",
       active: true,
       description:
-      "Worked on an internal Admin Panel for Kesta, managing product listings, user accounts, and order tracking with secure role-based access and enterprise-grade data handling.", 
+      "A comprehensive internal administration dashboard for managing the Kesta e-commerce ecosystem.", 
       technologies: [
         "React.js",
         "Node.js",
@@ -246,6 +278,7 @@ export const DATA = {
       ],
       image: "/kadmin.png",
       video: "",
+      techDescription: "",
     },
   ],
 

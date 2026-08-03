@@ -7,6 +7,13 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import Markdown from "react-markdown";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
@@ -40,6 +47,7 @@ interface Props {
     href: string;
   }[];
   className?: string;
+  techDescription?: string;
 }
 
 export function ProjectCard({
@@ -53,6 +61,7 @@ export function ProjectCard({
   video,
   links,
   className,
+  techDescription,
 }: Props) {
   return (
     <div
@@ -136,6 +145,26 @@ export function ProjectCard({
               </Badge>
             ))}
           </div>
+        )}
+        {techDescription !== undefined && (
+          <Dialog>
+            <DialogTrigger asChild>
+              <button 
+                className="text-xs text-primary hover:underline underline-offset-2 mt-2 text-left w-fit font-medium" 
+                onClick={(e) => e.stopPropagation()}
+              >
+                Know More
+              </button>
+            </DialogTrigger>
+            <DialogContent onClick={(e) => e.stopPropagation()} className="max-h-[80vh] overflow-y-auto sm:max-w-[600px]">
+              <DialogHeader>
+                <DialogTitle className="text-xl">{title} - Technical Details</DialogTitle>
+              </DialogHeader>
+              <div className="text-sm prose dark:prose-invert max-w-full text-muted-foreground mt-4">
+                <Markdown>{techDescription || "*Technical description coming soon...*"}</Markdown>
+              </div>
+            </DialogContent>
+          </Dialog>
         )}
       </div>
     </div>
